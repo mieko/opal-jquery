@@ -38,7 +38,7 @@ class Element < `#{JQUERY_CLASS.to_n}`
     %x{
       for (var i = 0, length = methods.length, method; i < length; i++) {
         method = methods[i];
-        self._proto['$' + method] = self._proto[method];
+        self.$$proto['$' + method] = self.$$proto[method];
       }
 
       return nil;
